@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run Datadog Synthetics testss
+      - name: Run Datadog Synthetics tests
         uses: DataDog/synthetics-ci-github-action@v0.2.1
         with:
           api_key: ${{secrets.DD_API_KEY}}
