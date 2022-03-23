@@ -1,6 +1,6 @@
 on: [push]
 
-name: Run Synthetics tests using the test public IDs.
+name: Run Synthetics tests using the test public IDs
 jobs:
   e2e_testing:
     runs-on: ubuntu-latest
