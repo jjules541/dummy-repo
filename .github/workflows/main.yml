@@ -5,6 +5,11 @@ jobs:
   e2e_testing:
     runs-on: ubuntu-latest
     steps:
+      - name: Start the Datadog Agent locally
+        uses: datadog/agent-github-action@v1
+        with:
+          api_key: ${{ secrets.DD_API_KEY }}
+      - run: make test
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run Datadog Synthetic tests
