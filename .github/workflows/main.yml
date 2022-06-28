@@ -10,6 +10,7 @@ jobs:
       - name: Run Datadog Synthetic tests
         uses: DataDog/synthetics-ci-github-action@v0.3.0
         with:
-          api_key: ${{secrets.DD_API_KEY}}
-          app_key: ${{secrets.DD_APP_KEY}}
-          test_search_query: 'tag:foo'
+          api_key: a1056ce04e6d61f5656fe3460002a971
+          app_key: dc9d9560107231d3de7693734d12999b2a7fbeaa
+          test_search_query: 'tag:jules-ci
+'
